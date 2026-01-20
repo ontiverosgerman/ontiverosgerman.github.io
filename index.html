@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>German Ontiveros - Portfolio</title>
+    <title>German Ontiveros - Software Engineer Portfolio</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,21 +19,28 @@
         header {
           background: #2563eb;
           color: white;
-          padding: 80px 20px;
+          padding: 70px 20px;
           text-align: center;
         }
         header h1 {
-          margin: 0;
-          font-size: 3em;
+          margin: 0 0 10px;
+          font-size: 2.8em;
           font-weight: 700;
         }
+        header h2 {
+          margin: 0 0 20px;
+          font-size: 1.3em;
+          font-weight: 400;
+          opacity: 0.95;
+        }
         header p {
-          font-size: 1.2em;
-          margin: 15px 0 30px;
+          margin: 5px 0 25px;
+          font-size: 1em;
+          opacity: 0.9;
         }
         header .cta a {
           display: inline-block;
-          margin: 5px;
+          margin: 6px;
           padding: 12px 20px;
           border-radius: 6px;
           background: white;
@@ -58,27 +65,24 @@
           opacity: 1;
           transform: translateY(0);
         }
-        h2 {
-          color: #2563eb;
-          border-left: 5px solid #fbbf24;
-          padding-left: 10px;
-          font-weight: 600;
-          margin-bottom: 20px;
-        }
-        ul { padding-left: 20px; }
+        .section h2 {
+  color: #2563eb;
+  border-left: 5px solid #fbbf24;
+  padding-left: 10px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
         a { color: #2563eb; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        ul { padding-left: 20px; }
         .project {
-          margin-bottom: 25px;
-          padding: 15px;
+          margin-bottom: 40px;
+          padding: 20px;
           border: 1px solid #e2e8f0;
           border-radius: 8px;
           background: white;
           box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .project-title {
-          font-weight: 600;
-          font-size: 1.1em;
         }
         .resume-links a {
           display: inline-block;
@@ -105,12 +109,14 @@
     </style>
 </head>
 <body>
+
 <!-- Hero Section -->
 <header>
     <h1>👋 Hi, I'm German Ontiveros</h1>
-    <p>Software Engineer | Java | Spring Boot | AWS | Microservices</p>
+    <h2>Software Engineer • Java • Spring Boot • AWS • Microservices</h2>
+    <p>San Diego, CA • Open to Full-Time Roles (Remote/On-Site)</p>
     <div class="cta">
-        <a href="#projects">🚀 View My Projects</a>
+        <a href="#projects">🚀 View Projects</a>
         <a href="German_Ontiveros_Resume.pdf" download>⬇️ Download Resume</a>
     </div>
 </header>
@@ -118,26 +124,83 @@
 <!-- About -->
 <div class="section" id="about">
     <h2>About Me</h2>
-    <p>I’m a software engineer with 7+ years of experience building scalable Java applications at ResMed.
-        I specialize in Spring Boot, REST APIs, SQL, and AWS. I enjoy solving complex problems with clean code
-        and I’m currently looking for opportunities to build impactful software solutions.</p>
+    <p>I’m a software engineer with 8+ years of experience building scalable Java applications at ResMed.
+        I specialize in Spring Boot, microservices, REST APIs, SQL, and AWS.
+        I enjoy solving complex problems with clean code and I’m currently looking for opportunities to build impactful software solutions.</p>
+</div>
+
+<!-- Skills -->
+<div class="section" id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Languages:</strong> Java, JavaScript</li>
+        <li><strong>Frameworks:</strong> Spring Boot, React</li>
+        <li><strong>Cloud:</strong> AWS (EC2, S3, Lambda basics)</li>
+        <li><strong>Databases:</strong> PostgreSQL, H2, SQL</li>
+        <li><strong>Architecture:</strong> Microservices, REST APIs</li>
+        <li><strong>Tools:</strong> Docker, Git, Maven, Kafka (learning)</li>
+    </ul>
 </div>
 
 <!-- Projects -->
 <div class="section" id="projects">
     <h2>Projects</h2>
+    <p>Below are some backend microservices I developed using Spring Boot while exploring domain-driven design and modern API architecture.</p>
+
+    <!-- (Your project cards remain unchanged) -->
+    <!-- Patient Service -->
+    <!-- Contractor Assignment Service -->
+    <!-- Football Service -->
+
+    <!-- your project HTML blocks go here untouched -->
     <div class="project">
-        <span class="project-title"><a href="https://github.com/ontiverosgerman/patient-service">Spring Patient Microservice</a></span>
-        <p>A Java-based microservice to manage patient records and related operations through RESTful APIs. Built using Spring Boot and Maven for easy integration in healthcare or medical applications.</p>
+        <h3>Patient Service (Healthcare Microservice)</h3>
+        <p><strong>Description:</strong> A Spring Boot microservice for managing patients and doctors within a healthcare system. Supports secure patient-doctor assignments and enforces business rules for authorization.</p>
+        <p><strong>Role:</strong> Backend Developer</p>
+        <p><strong>Tech Stack:</strong> Java, Spring Boot, PostgreSQL, Hibernate, Docker, Flyway, REST APIs</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>CRUD operations for patients and doctors</li>
+            <li>Assign patients to doctors with relational constraints</li>
+            <li>Validation and standardized error handling</li>
+            <li>Database schema managed via Flyway migrations</li>
+            <li>Containerized with Docker for local development</li>
+        </ul>
+        <p><strong>Source:</strong> <a href="https://github.com/ontiverosgerman/patient-service" target="_blank">GitHub Repository</a></p>
     </div>
+
     <div class="project">
-        <span class="project-title"><a href="https://github.com/ontiverosgerman/football-service">Spring Football Microservice</a></span>
-        <p>A Java-based microservice for managing football-related data—such as teams, players, matches, or stats—designed to expose RESTful APIs to support backend operations for football apps and dashboards.</p>
+        <h3>Contractor Assignment Service (Workforce Microservice)</h3>
+        <p><strong>Description:</strong> A Spring Boot microservice for managing contractors, job assignments, and availability. Designed to model real-world contractor workflows and assignment logic.</p>
+        <p><strong>Role:</strong> Backend Developer</p>
+        <p><strong>Tech Stack:</strong> Java, Spring Boot, H2 Database, JPA/Hibernate, REST APIs</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>CRUD operations for contractors and job assignments</li>
+            <li>Relational modeling between contractors and jobs</li>
+            <li>Optimized for rapid dev using in-memory H2 database</li>
+            <li>RESTful API design with clean domain boundaries</li>
+            <li>Validation and status tracking for assignments</li>
+        </ul>
+        <p><strong>Source:</strong> <a href="https://github.com/ontiverosgerman/contractor-assignment-service" target="_blank">GitHub Repository</a></p>
     </div>
+
     <div class="project">
-        <span class="project-title"><a href="https://github.com/ontiverosgerman/contractor-assignment-service">Contractor to House Assignment Microservice</a></span>
-        <p>A Java Spring Boot microservice for managing contractors and their assignments. Provides RESTful APIs to create, retrieve, and list contractors and their associated assignments. Built with H2 in-memory database for easy development and testing. Ideal for integration with larger enterprise systems managing project assignments.</p>
+        <h3>Football Service (Sports Team Microservice)</h3>
+        <p><strong>Description:</strong> A Spring Boot microservice for managing football teams, players, and managers. Exposes REST endpoints for roster management and team composition.</p>
+        <p><strong>Role:</strong> Backend Developer</p>
+        <p><strong>Tech Stack:</strong> Java, Spring Boot, H2 Database, JPA/Hibernate, REST APIs</p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Team, Player, and Manager domain modeling</li>
+            <li>CRUD operations for teams and related entities</li>
+            <li>H2 in-memory database for quick development & testing</li>
+            <li>Entity validation and relationship mapping via JPA</li>
+            <li>Structured RESTful API responses</li>
+        </ul>
+        <p><strong>Source:</strong> <a href="https://github.com/ontiverosgerman/football-service" target="_blank">GitHub Repository</a></p>
     </div>
+
 </div>
 
 <!-- Resume -->
@@ -150,18 +213,18 @@
 </div>
 
 <!-- Contact -->
-<div class="section">
+<div class="section" id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:ontiveros.german@gmail.com">ontiveros.german@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/germanontiveros">linkedin.com/in/germanontiveros</a></p>
-    <p>GitHub: <a href="https://github.com/ontiverosgerman">github.com/ontiverosgerman</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/germanontiveros" target="_blank">linkedin.com/in/germanontiveros</a></p>
+    <p>GitHub: <a href="https://github.com/ontiverosgerman" target="_blank">github.com/ontiverosgerman</a></p>
 </div>
 
 <footer>
     <p>© 2025 German Ontiveros • Built with ❤️ using HTML & CSS</p>
 </footer>
 
-<!-- Scroll Animation Script -->
+<!-- Scroll Animation -->
 <script>
     const sections = document.querySelectorAll('.section');
     const revealSections = () => {
@@ -176,5 +239,6 @@
     window.addEventListener('scroll', revealSections);
     window.addEventListener('load', revealSections);
 </script>
+
 </body>
 </html>
