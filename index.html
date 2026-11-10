@@ -10,101 +10,108 @@
 
     <style>
         body {
-          font-family: 'Poppins', sans-serif;
-          margin: 0;
-          background: #f8fafc;
-          color: #1e293b;
-          line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
         }
         header {
-          background: #2563eb;
-          color: white;
-          padding: 70px 20px;
-          text-align: center;
+            background: #2563eb;
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
         }
         header h1 {
-          margin: 0 0 10px;
-          font-size: 2.8em;
-          font-weight: 700;
+            margin: 0 0 10px;
+            font-size: 2.8em;
+            font-weight: 700;
         }
         header h2 {
-          margin: 0 0 20px;
-          font-size: 1.3em;
-          font-weight: 400;
-          opacity: 0.95;
+            margin: 0 0 20px;
+            font-size: 1.3em;
+            font-weight: 400;
+            opacity: 0.95;
         }
         header p {
-          margin: 5px 0 25px;
-          font-size: 1em;
-          opacity: 0.9;
+            margin: 5px 0 25px;
+            font-size: 1em;
+            opacity: 0.9;
         }
         header .cta a {
-          display: inline-block;
-          margin: 6px;
-          padding: 12px 20px;
-          border-radius: 6px;
-          background: white;
-          color: #2563eb;
-          text-decoration: none;
-          font-weight: 600;
-          transition: background 0.2s ease, color 0.2s ease;
+            display: inline-block;
+            margin: 6px;
+            padding: 12px 20px;
+            border-radius: 6px;
+            background: white;
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s ease, color 0.2s ease;
         }
         header .cta a:hover {
-          background: #1e293b;
-          color: white;
+            background: #1e293b;
+            color: white;
         }
         .section {
-          margin: 60px auto;
-          max-width: 900px;
-          padding: 0 20px;
-          opacity: 0;
-          transform: translateY(30px);
-          transition: opacity 0.6s ease, transform 0.6s ease;
+            margin: 60px auto;
+            max-width: 900px;
+            padding: 0 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
         }
         .section.active {
-          opacity: 1;
-          transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
         .section h2 {
-  color: #2563eb;
-  border-left: 5px solid #fbbf24;
-  padding-left: 10px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
+            color: #2563eb;
+            border-left: 5px solid #fbbf24;
+            padding-left: 10px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
 
         a { color: #2563eb; text-decoration: none; }
         a:hover { text-decoration: underline; }
         ul { padding-left: 20px; }
         .project {
-          margin-bottom: 40px;
-          padding: 20px;
-          border: 1px solid #e2e8f0;
-          border-radius: 8px;
-          background: white;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
         }
         .resume-links a {
-          display: inline-block;
-          margin-right: 15px;
-          padding: 10px 15px;
-          border: 1px solid #2563eb;
-          border-radius: 6px;
-          background: #fff;
-          font-weight: 600;
-          transition: background 0.2s ease, color 0.2s ease;
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px 15px;
+            border: 1px solid #2563eb;
+            border-radius: 6px;
+            background: #fff;
+            font-weight: 600;
+            transition: background 0.2s ease, color 0.2s ease;
         }
         .resume-links a:hover {
-          background: #2563eb;
-          color: #fff;
+            background: #2563eb;
+            color: #fff;
         }
         footer {
-          text-align: center;
-          padding: 30px;
-          font-size: 0.9em;
-          background: #1e293b;
-          color: #f8fafc;
-          margin-top: 40px;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+            background: #1e293b;
+            color: #f8fafc;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -133,26 +140,53 @@
 <div class="section" id="skills">
     <h2>Skills</h2>
     <ul>
-        <li><strong>Languages:</strong> Java, JavaScript</li>
-        <li><strong>Frameworks:</strong> Spring Boot, React</li>
-        <li><strong>Cloud:</strong> AWS (EC2, S3, Lambda basics)</li>
-        <li><strong>Databases:</strong> PostgreSQL, H2, SQL</li>
-        <li><strong>Architecture:</strong> Microservices, REST APIs</li>
-        <li><strong>Tools:</strong> Docker, Git, Maven, Kafka (learning)</li>
+        <li><strong>Languages:</strong> Java 21, TypeScript, JavaScript</li>
+        <li><strong>Frameworks:</strong> Spring Boot 3, Spring Security, React 18, Tailwind CSS</li>
+        <li><strong>Cloud & DevOps:</strong> AWS, Docker, Docker Compose, Vite</li>
+        <li><strong>Databases:</strong> PostgreSQL, H2, SQL, Spring Data JPA / Hibernate</li>
+        <li><strong>Architecture:</strong> Microservices, REST APIs, Layered Architecture, DTO Records</li>
+        <li><strong>Tools:</strong> Git, GitHub, Maven</li>
     </ul>
 </div>
 
 <!-- Projects -->
 <div class="section" id="projects">
     <h2>Projects</h2>
-    <p>Below are some backend microservices I developed using Spring Boot while exploring domain-driven design and modern API architecture.</p>
+    <p>Below are full-stack applications and backend microservices I developed using Java, Spring Boot, and React.</p>
 
-    <!-- (Your project cards remain unchanged) -->
+    <!-- Wayfare: Personal Finance & Travel Savings App -->
+    <div class="project">
+        <h3>Wayfare: Personal Finance & Travel Savings App (In Progress)</h3>
+        <!-- Replace 'wayfair-screenshot.png' with your actual image filename -->
+        <img src="wayfair-screenshot.png" alt="Wayfare App Preview">
+        <p><strong>Description:</strong> A full-stack web app for tracking income and expenses and saving toward specific goals, like a trip to Portugal. Progress toward each goal is calculated from real transactions rather than typed in by hand. Built to modernize my Java/Spring Boot background and add React, TypeScript, and containerized deployment.</p>
+        <p><strong>Role:</strong> Full-Stack Software Engineer</p>
+
+        <p><strong>Tech Stack:</strong></p>
+        <ul>
+            <li><strong>Backend:</strong> Java 21, Spring Boot 3, Spring Security, Spring Data JPA / Hibernate</li>
+            <li><strong>Auth:</strong> Stateless JWT authentication, BCrypt password hashing</li>
+            <li><strong>Database:</strong> PostgreSQL</li>
+            <li><strong>Frontend:</strong> React 18, TypeScript, Vite, Tailwind CSS</li>
+            <li><strong>Infrastructure:</strong> Docker and Docker Compose (database, API, and frontend as separate containers with health checks)</li>
+            <li><strong>Source Control:</strong> Git / GitHub</li>
+        </ul>
+
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li>Registration and login with JWT authentication; every user’s data is isolated, and ownership is enforced on every request</li>
+            <li>Income and expense tracking with validation and clean JSON error handling</li>
+            <li>Savings goals with live progress bars. Income tagged to a goal adds to it and an expense subtracts, so progress always matches underlying transactions</li>
+            <li>Layered architecture (controller, service, repository) with immutable DTOs built as Java records, kept separate from JPA entities</li>
+            <li>React frontend using Context for auth state, token persistence across refreshes, and automatic logout when a token expires</li>
+        </ul>
+
+        <p><strong>Roadmap:</strong> Investment portfolio dashboard (holdings, gain/loss, allocation), an AI financial coach using Spring AI and Claude, a trip cost planner, and cloud deployment.</p>
+
+        <p><strong>Source:</strong> <a href="https://github.com/ontiverosgerman" target="_blank">GitHub Repository</a></p>
+    </div>
+
     <!-- Patient Service -->
-    <!-- Contractor Assignment Service -->
-    <!-- Football Service -->
-
-    <!-- your project HTML blocks go here untouched -->
     <div class="project">
         <h3>Patient Service (Healthcare Microservice)</h3>
         <p><strong>Description:</strong> A Spring Boot microservice for managing patients and doctors within a healthcare system. Supports secure patient-doctor assignments and enforces business rules for authorization.</p>
@@ -221,20 +255,20 @@
 </div>
 
 <footer>
-    <p>© 2025 Alex Ontiveros • Built with ❤️ using HTML & CSS</p>
+    <p>© 2026 Alex Ontiveros • Built with ❤️ using HTML & CSS</p>
 </footer>
 
 <!-- Scroll Animation -->
 <script>
     const sections = document.querySelectorAll('.section');
     const revealSections = () => {
-      const triggerBottom = window.innerHeight * 0.85;
-      sections.forEach(section => {
-        const boxTop = section.getBoundingClientRect().top;
-        if (boxTop < triggerBottom) {
-          section.classList.add('active');
-        }
-      });
+        const triggerBottom = window.innerHeight * 0.85;
+        sections.forEach(section => {
+            const boxTop = section.getBoundingClientRect().top;
+            if (boxTop < triggerBottom) {
+                section.classList.add('active');
+            }
+        });
     };
     window.addEventListener('scroll', revealSections);
     window.addEventListener('load', revealSections);
